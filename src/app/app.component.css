@@ -1,0 +1,17 @@
+.navbar-expand-lg
+{
+    background-color:rgba(244, 67, 54, 0.7);
+}
+.navbar-brand
+{
+    color: rgb(78, 22, 15);
+}
+.nav-link
+{
+    color: rgb(116, 29, 18);
+}
+body
+{
+    background-color: bisque;
+}
+
