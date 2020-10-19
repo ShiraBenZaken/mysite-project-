@@ -1,8 +1,4 @@
 
-body
-{
-    background-color: bisque;
-}
 h4
 {
     text-align: center;
@@ -10,4 +6,16 @@ h4
 .firstshow
 {
     padding: 1.5rem 1.5rem;
+}
+.container-fluid    
+{
+    max-width: 100%;
+}
+
+img
+{
+    background-image: url("/mysite/src/assets/img/backgoundimg.jpg") !important;
+    background-size: cover;
+    background-position: center center;
+
 }
