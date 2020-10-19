@@ -11,4 +11,9 @@ export class HomepageComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
+  f1(){
+    window.open('/assets/img/cv_shira_bz.pdf');
+  }
 }

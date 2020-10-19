@@ -12,10 +12,14 @@ h4
     max-width: 100%;
 }
 
-img
+.img
 {
     background-image: url("/mysite/src/assets/img/backgoundimg.jpg") !important;
     background-size: cover;
     background-position: center center;
-
+}
+.cv
+{
+    padding-top: 2rem;
+    text-align: center;
 }
