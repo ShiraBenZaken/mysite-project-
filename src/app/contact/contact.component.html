@@ -2,7 +2,7 @@
 <body class="page">
 <!-- form goes here -->
 
-<form class="form-contact"  (ngSubmit)="processForm()" #contactForm="ngForm" >
+<form class="form-contact" (ngSubmit)="processForm(heroForm)" #heroForm="ngForm" >
     <h4 class="title">Contact</h4>  
     <div class="row">
         <!-- name -->
@@ -12,7 +12,7 @@
                 <input type="text" name="name"  class="form-control" 
                         placeholder="Your Name" [(ngModel)]="name" required 
                         minlength="3" #nameInput="ngModel">
-                        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty">
+                        <div class="help is-error" *ngIf="nameInput.invalid && nameInput.dirty ">
                             Name is required and needs to be at least 3 characters long.
                         </div>
             </div>
@@ -41,7 +41,7 @@
                     </div>
     </div>
     <div style="padding-top: 2rem;">
-        <button type="submit" class="btn btn-outline-dark btn-block">Send</button>
+        <button type="submit" class="btn btn-outline-dark btn-block" >Send</button>
     </div>
 </form>
 </body>

@@ -28,7 +28,6 @@ import { HeaderComponent } from './components/header/header.component';
     AppRoutingModule,
     FormsModule,
 
-
   ],
   providers: [],
   bootstrap: [AppComponent]
