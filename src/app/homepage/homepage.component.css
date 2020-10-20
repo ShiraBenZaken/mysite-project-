@@ -14,12 +14,20 @@ h4
 
 .img
 {
-    background-image: url("/mysite/src/assets/img/backgoundimg.jpg") !important;
+    background-image: url("../../assets/img/backgoundimg.jpg"   ) !important;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    position: relative;
+    height: 50rem;
 }
 .cv
 {
     padding-top: 2rem;
     text-align: center;
+}
+
+.btn-outline-warning
+{
+    background-color: ivory;
 }

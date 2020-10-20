@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -10,7 +11,7 @@ export class ContactComponent implements OnInit {
   email:string;
   message:string;
 
-  constructor() { }
+  constructor(){}
 
   ngOnInit(): void {
   }
@@ -19,5 +20,9 @@ export class ContactComponent implements OnInit {
     const allInfo = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
     alert(allInfo); 
   }
+
+
+    
+  
 
 }

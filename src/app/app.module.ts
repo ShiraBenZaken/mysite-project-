@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +26,9 @@ import { HeaderComponent } from './components/header/header.component';
     BrowserModule,
     NgbModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

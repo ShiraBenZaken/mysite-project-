@@ -1,8 +1,9 @@
 <div class="container-fluid">
 <body class="page">
 <!-- form goes here -->
-<form class="form-contact" (ngSubmit)="processForm()">
-    <h4 class="title">Contact Us!</h4>  
+
+<form class="form-contact"  (ngSubmit)="processForm()" #contactForm="ngForm" >
+    <h4 class="title">Contact</h4>  
     <div class="row">
         <!-- name -->
         <div class="col">
