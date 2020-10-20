@@ -32,7 +32,7 @@ export class ContactComponent implements OnInit {
       from_Email: this.email,
       message: this.message,
       }); 
-      var allInfo = `האימייל נשלח בהצלחה`;
+      var allInfo = `Email Sent Successfully`;
       alert(allInfo);
     //  this.myform.reset();
     heroForm.reset({})
@@ -45,10 +45,7 @@ export class ContactComponent implements OnInit {
     }
 
 
-  }
-
-
-    
+  } 
   
 
 }
