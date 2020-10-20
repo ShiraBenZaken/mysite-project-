@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
+import{ init } from 'emailjs-com';
+init("user_5inU7h9xwOnwNI9CzzMo3");
 
 
 @Component({
@@ -17,8 +20,23 @@ export class ContactComponent implements OnInit {
   }
 
   processForm() {
-    const allInfo = `My name is ${this.name}. My email is ${this.email}. My message is ${this.message}`;
-    alert(allInfo); 
+
+    try{
+    emailjs.send("122122","template_fqecr8c",{
+      from_name: this.name,
+      from_Email: this.email,
+      message: this.message,
+      }); 
+       var allInfo = `האימייל נשלח בהצלחה`
+      alert(allInfo)
+    }
+    catch
+    {
+     var allInfo1 = `התרחשה שגיאה`
+      alert(allInfo); 
+    }
+
+
   }
 
 
