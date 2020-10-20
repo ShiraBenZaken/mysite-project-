@@ -15,17 +15,13 @@ export class ContactComponent implements OnInit {
   name:string;
   email:string;
   message:string;
-
-
-
+  
   constructor(){}
 
   ngOnInit(): void {
   }
 
-
   processForm(heroForm) {
-
     try{
     emailjs.send("122122","template_fqecr8c",{
       from_name: this.name,
@@ -35,17 +31,12 @@ export class ContactComponent implements OnInit {
       var allInfo = `Email Sent Successfully`;
       alert(allInfo);
     //  this.myform.reset();
-    heroForm.reset({})
-      
+    heroForm.reset({})    
     }
     catch
     {
      var allInfo1 = `התרחשה שגיאה`;
       alert(allInfo); ;
     }
-
-
   } 
-  
-
 }
